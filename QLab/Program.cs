@@ -18,12 +18,13 @@ public class Program
         Console.WriteLine(q);
         Console.WriteLine(qCopy);
         isNumberThere(qCopy, 7);
+        Console.WriteLine(isNumberThere(qCopy, 7));
     }
-    public static bool isNumberThere (Queue<int> q, int num1)
+    public static bool isNumberThere (Queue<int> q, int searchnum)
     {
-        while (!q.IsEmpty)
+        while (!q.IsEmpty())
         {
-            if (q.Head == num1)
+            if (q.Head() == searchnum)
             {
                 return true;
             }
