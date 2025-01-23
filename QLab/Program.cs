@@ -17,12 +17,20 @@ public class Program
         qCopy.Insert(13);
         Console.WriteLine(q);
         Console.WriteLine(qCopy);
+        isNumberThere(qCopy, 7);
     }
-    public static bool isPerfect(Queue<int> q)
+    public static bool isNumberThere (Queue<int> q, int num1)
     {
-
+        while (!q.IsEmpty)
+        {
+            if (q.Head == num1)
+            {
+                return true;
+            }
+            q.Remove();
+        }
+        return false;
     }
-
     public static Queue<int> SetQCopy(Queue<int> q)
     {
         Queue<int> qCopy = new();
