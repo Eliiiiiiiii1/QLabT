@@ -18,6 +18,10 @@ public class Program
         Console.WriteLine(q);
         Console.WriteLine(qCopy);
     }
+    public static bool isPerfect(Queue<int> q)
+    {
+
+    }
 
     public static Queue<int> SetQCopy(Queue<int> q)
     {
